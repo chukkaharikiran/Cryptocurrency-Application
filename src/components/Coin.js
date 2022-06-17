@@ -27,9 +27,9 @@ const Coin = ({
         <div className='coin-data'>
           <p className='coin-price'>${price}</p>
           {priceChange < 0 ? (
-            <p className='coin-percent red'>{priceChange.toFixed(2)}%</p>
+            <p className='coin-percent red'>{Number(priceChange).toFixed(2)}%</p>
           ) : (
-            <p className='coin-percent green'>{priceChange.toFixed(2)}%</p>
+            <p className='coin-percent green'>{Number(priceChange).toFixed(2)}%</p>
           )}
           <p className='coin-high'>${high}</p>
           <p className='coin-low'>${low}</p>
